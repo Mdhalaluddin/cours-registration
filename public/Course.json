@@ -1,0 +1,75 @@
+[
+    {
+      "id": "1",
+      "cover": "https://i.ibb.co/0CXvWjP/Rectangle-2-2.png",
+      "title": "Introduction to C Programming",
+      "description": "C programming is a fundamental and powerful language for developing software and systems, renowned for its efficiency.",
+      "price": "1000",
+      "credit": 1
+    },
+    {
+      "id": "2",
+      "cover": "https://i.ibb.co/T8k7CXX/Rectangle-2-3.png",
+      "title": "Introduction to Algorithms",
+      "description": "Algorithms are step-by-step procedures or instructions for solving problems efficiently, essential in computer science.",
+      "price": "2000",
+      "credit": 3
+    },
+    {
+      "id": "3",
+      "cover": "https://i.ibb.co/chJpyQw/Rectangle-2-4.png",
+      "title": "Introduction to C++ for DSA",
+      "description": "C++ is a robust programming language commonly used for Data Structures and Algorithms (DSA) due to its flexibility.",
+      "price": "3000",
+      "credit": 2
+    },
+    {
+      "id": "4",
+      "cover": "https://i.ibb.co/T4kkG40/Rectangle-3.png",
+      "title": "Basic Data Structures",
+      "description": "Basic data structures are fundamental tools in computer science that organize and store data efficiently, including arrays, linked lists, and stacks.",
+      "price": "2500",
+      "credit": 9
+    },
+    {
+      "id": "5",
+      "cover": "https://i.ibb.co/kq3mLsf/Rectangle-2.png",
+      "title": "Introduction to OOP Python",
+      "description": "Object-Oriented Programming (OOP) in Python is a programming paradigm that structures code around objects and classes, promoting modularity and reusability.",
+      "price": "1500",
+      "credit": 8
+    },
+    {
+      "id": "6",
+      "cover": "https://i.ibb.co/fv61Gh2/Rectangle-2-5.png",
+      "title": "Software Engineering",
+      "description": "The systematic and disciplined approach to designing, developing, and maintaining software systems, ensuring their quality, reliability, and efficiency.",
+      "price": "3500",
+      "credit": 7
+    },
+    {
+      "id": "7",
+      "cover": "https://i.ibb.co/YRdPShw/Rectangle-3-1.png",
+      "title": "AWS, Cloud Computing",
+      "description": "Amazon Web Services (AWS) is a leading cloud computing platform that provides a wide range and cost-effective cloud services. revolutionizing the way businesses manage and deploy IT infrastructure.",
+      "price": "4000",
+      "credit": 6
+    },
+    {
+      "id": "8",
+      "cover": "https://i.ibb.co/N9kFs1B/Rectangle-2-1.png",
+      "title": "Database (MySQL)",
+      "description": "MySQL is a popular open-source relational database management system (RDBMS) known for its speed and reliability, widely used for data storage and retrieval in web applications.",
+      "price": "4500",
+      "credit": 5
+    },
+    {
+      "id": "9",
+      "cover": "https://i.ibb.co/PZndvh4/Rectangle-2-6.png",
+      "title": "Problem-Solving Part",
+      "description": "Problem-solving is the process of analyzing challenges and finding effective solutions, a fundamental skill in various domains, including mathematics, science, and everyday life.",
+      "price": 5000,
+      "credit": 4
+    }
+  ]
+  
