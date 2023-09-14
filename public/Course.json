@@ -3,7 +3,7 @@
       "id": "1",
       "cover": "https://i.ibb.co/0CXvWjP/Rectangle-2-2.png",
       "title": "Introduction to C Programming",
-      "description": "C programming is a fundamental and powerful language for developing software and systems, renowned for its efficiency.",
+      "description": "C programming is a fundamental and powerful language, renowned for its efficiency.",
       "price": "1000",
       "credit": 1
     },
@@ -19,7 +19,7 @@
       "id": "3",
       "cover": "https://i.ibb.co/chJpyQw/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
-      "description": "C++ is a robust programming language commonly used for Data Structures and Algorithms (DSA) due to its flexibility.",
+      "description": "C++ is a robust programming language commonly used for Data Structures.",
       "price": "3000",
       "credit": 2
     },
@@ -35,7 +35,7 @@
       "id": "5",
       "cover": "https://i.ibb.co/kq3mLsf/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "description": "Object-Oriented Programming (OOP) in Python is a programming paradigm that structures code around objects and classes, promoting modularity and reusability.",
+      "description": "Object-Oriented Programming (OOP) in Python is a paradigm that structures code around objects and classes.",
       "price": "1500",
       "credit": 8
     },
@@ -51,7 +51,7 @@
       "id": "7",
       "cover": "https://i.ibb.co/YRdPShw/Rectangle-3-1.png",
       "title": "AWS, Cloud Computing",
-      "description": "Amazon Web Services (AWS) is a leading cloud computing platform that provides a wide range and cost-effective cloud services. revolutionizing the way businesses manage and deploy IT infrastructure.",
+      "description": "Amazon Web Services (AWS) is a leading cloud that provides a wide range and cost-effective cloud services. revolutionizing the way businesses manage and deploy IT infrastructure.",
       "price": "4000",
       "credit": 6
     },

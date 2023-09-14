@@ -1,8 +1,8 @@
 import PropType from 'prop-types'
-const Card = ({card}) => {
+const Card = ({card, handleSelectBtn}) => {
     const {cover, title, description, price, credit} = card;
     return (
-        <div className="w-full my-4 bg-white p-3">
+        <div className="w-full my-4 bg-white p-3 rounded-lg">
             <img className="w-full" src={cover} alt="" />
             <h2 className="text-xl font-semibold my-2">{title}</h2>
             <p className="mb-2">{description}</p>
@@ -11,14 +11,16 @@ const Card = ({card}) => {
                 <h3>Credit: {credit}<span>hr</span></h3>
             </div>
             <div className='bg-green-600 text-center rounded-lg '>
-                <button className='p-2 text-2xl text-white'>Select</button>
+                <button onClick={handleSelectBtn}
+                className='p-2 text-2xl text-white'>Select</button>
             </div>
         </div>
     );
 };
 
 Card.propType={
-    card: PropType.array
+    card: PropType.array,
+    handleSelectBtn: PropType.func
 
 }
 
