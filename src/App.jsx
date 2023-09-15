@@ -5,32 +5,29 @@ import CourseName from './Components/Course/CourseName'
 
 function App() {
   const [courseName, setCourseName] = useState([]);
-  const [totalCredit, setTotalCredit] = useState(0);
   const [remaining, setRemaining] = useState(0);
+  const [total, setTotal] = useState(0);
 
-  const handleSelectBtn = (card) => {
-    const isExist = courseName.find((item)=> item.id === card.id);
-    let sum = card.credit;
-    if(isExist){
-      return alert ('already created this course')
+  const handleSelectBtn = card => {
+    const isExist = courseName.find((item) => item.id === card.id);
+    let count = card.credit;
+    if (isExist) {
+      alert('already created this course')
     }
-    else{
-      const newCourseName = [...courseName, card];
-      setCourseName(newCourseName)
-    }
-    courseName.forEach((item)=>{
-      sum = sum + item.credit;
-    });
-    const totalRemaining = 20 - sum;
+    else {
+      courseName.forEach((card) => {
+        count += card.credit;
+      });
+      const totalRemaining = 20 - count;
 
-    if(sum > 20){
-      return alert('kos garib aci')
-    } else{
-      setTotalCredit(sum)
-      setRemaining(totalRemaining);
-      setCourseName([...setCourseName, card]);
+      if (count > 20) {
+        return alert('kus garib aci babo');
+      } else {
+        setTotal(count);
+        setRemaining(totalRemaining);
+        setCourseName([...courseName, card]);
+      }
     }
-    // total price sum
   }
   return (
     <>
@@ -40,7 +37,7 @@ function App() {
           <Cards handleSelectBtn={handleSelectBtn}></Cards>
         </div>
         <div className='w-1/4'>
-          <CourseName courseName={courseName} totalCredit={totalCredit} remaining={remaining} ></CourseName>
+          <CourseName courseName={courseName} remaining={remaining} total={total} ></CourseName>
         </div>
       </div>
     </>

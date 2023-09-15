@@ -1,5 +1,5 @@
 import PropType from 'prop-types'
-const CourseName = ({courseName, totalCredit, remaining}) => {
+const CourseName = ({courseName, total, remaining}) => {
     // console.log(courseName);
     // const {title}= courseName;
     return (
@@ -16,14 +16,14 @@ const CourseName = ({courseName, totalCredit, remaining}) => {
             </div>
             <div>
                 <hr className='mt-5' />
-                <h2 className="text-xl font-medium mb-5 mt-5">Total Credit Hour {totalCredit} </h2>
+                <h2 className="text-xl font-medium mb-5 mt-5">Total Credit Hour {total} </h2>
             </div>
         </div>
     );
 };
 CourseName.propTypes={
     courseName: PropType.object.isRequired,
-    totalCredit: PropType.func,
+    total: PropType.func,
     remaining: PropType.func
 
 }
