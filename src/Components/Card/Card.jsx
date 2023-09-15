@@ -11,15 +11,15 @@ const Card = ({card, handleSelectBtn}) => {
                 <h3>Credit: {credit}<span>hr</span></h3>
             </div>
             <div className='bg-green-600 text-center rounded-lg '>
-                <button onClick={handleSelectBtn}
+                <button onClick={()=>handleSelectBtn(card)}
                 className='p-2 text-2xl text-white'>Select</button>
             </div>
         </div>
     );
 };
 
-Card.propType={
-    card: PropType.array,
+Card.propTypes={
+    card: PropType.object.isRequired,
     handleSelectBtn: PropType.func
 
 }

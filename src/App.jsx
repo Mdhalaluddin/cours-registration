@@ -7,7 +7,8 @@ function App() {
   const [courseName, setCourseName] = useState([]);
 
   const handleSelectBtn = card => {
-    console.log(card)
+    const newCourseName = [...courseName, card];
+    setCourseName(newCourseName)
   }
   return (
     <>
@@ -17,7 +18,7 @@ function App() {
           <Cards handleSelectBtn={handleSelectBtn}></Cards>
         </div>
         <div className='w-1/4'>
-          <CourseName></CourseName>
+          <CourseName courseName={courseName}></CourseName>
         </div>
       </div>
     </>
