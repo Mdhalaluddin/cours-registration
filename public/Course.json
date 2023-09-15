@@ -19,7 +19,7 @@
       "id": "3",
       "cover": "https://i.ibb.co/chJpyQw/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
-      "description": "C++ is a robust programming language commonly used for Data Structures.",
+      "description": "C++ is a powerful programming language commonly used for Data Structures and Algorithms (DSA) due to its efficiency and flexibility.",
       "price": "3000",
       "credit": 2
     },
@@ -35,7 +35,7 @@
       "id": "5",
       "cover": "https://i.ibb.co/kq3mLsf/Rectangle-2.png",
       "title": "Introduction to OOP Python",
-      "description": "Object-Oriented Programming (OOP) in Python is a paradigm that structures code around objects and classes.",
+      "description": "Object-Oriented Programming (OOP) in Python allows you to structure code using classes and objects, promoting modularity and reusability.",
       "price": "1500",
       "credit": 8
     },

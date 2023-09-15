@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Cards from './Components/Cards/Cards'
 import CourseName from './Components/Course/CourseName'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
   const [courseName, setCourseName] = useState([]);
@@ -12,7 +14,8 @@ function App() {
     const isExist = courseName.find((item) => item.id === card.id);
     let count = card.credit;
     if (isExist) {
-      alert('already created this course')
+      toast('already created this course'),{
+        background: 'green', color: 'silver', padding: '0 20px'}
     }
     else {
       courseName.forEach((card) => {
@@ -21,7 +24,7 @@ function App() {
       const totalRemaining = 20 - count;
 
       if (count > 20) {
-        return alert('kus garib aci babo');
+        return toast('No Credit remaining');
       } else {
         setTotal(count);
         setRemaining(totalRemaining);
@@ -39,6 +42,7 @@ function App() {
         <div className='w-1/4'>
           <CourseName courseName={courseName} remaining={remaining} total={total} ></CourseName>
         </div>
+        <ToastContainer />
       </div>
     </>
   )
