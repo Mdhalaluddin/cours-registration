@@ -5,10 +5,10 @@ import CourseName from './Components/Course/CourseName'
 
 function App() {
   const [courseName, setCourseName] = useState([]);
-  const [credit, setCredit] = useState(0);
+  const [totalCredit, setTotalCredit] = useState(0);
   const [remaining, setRemaining] = useState(0);
 
-  const handleSelectBtn = card => {
+  const handleSelectBtn = (card) => {
     const isExist = courseName.find((item)=> item.id === card.id);
     let sum = card.credit;
     if(isExist){
@@ -21,11 +21,16 @@ function App() {
     courseName.forEach((item)=>{
       sum = sum + item.credit;
     });
-    const totalRemaining = 20 - credit;
-    courseName(sum);
-    setRemaining(totalRemaining);
-    setCourseName([...setCourseName, card]);
-    
+    const totalRemaining = 20 - sum;
+
+    if(sum > 20){
+      return alert('kos garib aci')
+    } else{
+      setTotalCredit(sum)
+      setRemaining(totalRemaining);
+      setCourseName([...setCourseName, card]);
+    }
+    // total price sum
   }
   return (
     <>
@@ -35,7 +40,7 @@ function App() {
           <Cards handleSelectBtn={handleSelectBtn}></Cards>
         </div>
         <div className='w-1/4'>
-          <CourseName courseName={courseName} remaining={remaining}></CourseName>
+          <CourseName courseName={courseName} totalCredit={totalCredit} remaining={remaining} ></CourseName>
         </div>
       </div>
     </>
