@@ -5,10 +5,27 @@ import CourseName from './Components/Course/CourseName'
 
 function App() {
   const [courseName, setCourseName] = useState([]);
+  const [credit, setCredit] = useState(0);
+  const [remaining, setRemaining] = useState(0);
 
   const handleSelectBtn = card => {
-    const newCourseName = [...courseName, card];
-    setCourseName(newCourseName)
+    const isExist = courseName.find((item)=> item.id === card.id);
+    let sum = card.credit;
+    if(isExist){
+      return alert ('already created this course')
+    }
+    else{
+      const newCourseName = [...courseName, card];
+      setCourseName(newCourseName)
+    }
+    courseName.forEach((item)=>{
+      sum = sum + item.credit;
+    });
+    const totalRemaining = 20 - credit;
+    courseName(sum);
+    setRemaining(totalRemaining);
+    setCourseName([...setCourseName, card]);
+    
   }
   return (
     <>
@@ -18,7 +35,7 @@ function App() {
           <Cards handleSelectBtn={handleSelectBtn}></Cards>
         </div>
         <div className='w-1/4'>
-          <CourseName courseName={courseName}></CourseName>
+          <CourseName courseName={courseName} remaining={remaining}></CourseName>
         </div>
       </div>
     </>
